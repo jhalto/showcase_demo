@@ -1,0 +1,13 @@
+{
+  "profile": "Tap here to view and update your profile.",
+  "notification": "Tap here to see your notifications.",
+  "account": "Tap here to access your account settings.",
+  "filter": "Use this option to filter tenders.",
+  "preference": "Set your tender preferences here.",
+  "date": "Select a date to find tenders.",
+  "sort": "Sort tenders according to your preference.",
+  "apply": "Tap Apply to see the selected results.",
+  "back": "Back",
+  "next": "Next",
+  "skipTour": "Skip Tour"
+}
