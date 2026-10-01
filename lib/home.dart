@@ -9,7 +9,7 @@ class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
-
+ 
 class _HomeState extends State<Home> {
   GlobalKey top = GlobalKey();
   GlobalKey middle = GlobalKey();
@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
   void startShowCased() {
     if (!mounted) return;
 
-    ShowcaseView.get().startShowCase([top]);
+    ShowcaseView.get().startShowCase([top, middle]);
   }
 
   @override
@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Top(),
+            Top(top: top,),
             Showcase(
 
               tooltipActions: [
@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
                   backgroundColor: Colors.amber,
                 ),
               ],
-              key: top,
+              key: middle,
               description: 'Calendar',
               child: Text("dshfklasjdf"),
             ),
